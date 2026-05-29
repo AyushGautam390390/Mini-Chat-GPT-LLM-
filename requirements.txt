@@ -1,0 +1,9 @@
+fastapi
+uvicorn
+tensorflow
+sentence-transformers
+faiss-cpu
+pydantic
+tokenizers
+streamlit
+requests
