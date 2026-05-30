@@ -1,0 +1,15 @@
+Architecture
+
+User Query
+    ↓
+Embedding (Sentence Transformers)
+    ↓
+FAISS Vector Search
+    ↓
+Relevant Wikipedia Chunks
+    ↓
+Prompt Construction
+    ↓
+Mini GPT Model
+    ↓
+Generated Output

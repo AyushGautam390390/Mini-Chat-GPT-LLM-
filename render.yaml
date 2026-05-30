@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: mini-llm-api
+    runtime: docker
+    dockerfilePath: ./Dockerfile
+
+  - type: web
+    name: mini-llm-ui
+    runtime: python
+    buildCommand: pip install streamlit requests
+    startCommand: streamlit run streamlit_app.py --server.port $PORT --server.address 0.0.0.0
+    envVars:
+      - key: API_URL
+        value: https://mini-llm-api.onrender.com
